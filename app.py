@@ -22,7 +22,7 @@ t_tokenizer = GPT2Tokenizer.from_pretrained("gpt2-large")
 df = pd.read_csv("./mental_health.csv")
 
 model = tf.keras.models.load_model("./Sentiment.h5")
-t_model = GPT2LMHeadModel.from_pretrained("gpt2-large", pad_token_id=tokenizer.eos_token_id)
+t_model = GPT2LMHeadModel.from_pretrained("gpt2-large", pad_token_id=t_tokenizer.eos_token_id)
 
 sentiment = ctrl.Antecedent(np.arange(-1, 1.01, 0.01), 'sentiment')
 
