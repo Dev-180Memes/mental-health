@@ -1,0 +1,9 @@
+flask
+re
+pandas
+numpy
+scikit-fuzzy
+nltk
+tensorflow
+keras
+transformers
