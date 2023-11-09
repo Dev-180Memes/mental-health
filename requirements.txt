@@ -1,5 +1,4 @@
 flask
-re
 pandas
 numpy
 scikit-fuzzy
